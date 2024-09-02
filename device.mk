@@ -18,6 +18,12 @@ AB_OTA_PARTITIONS += \
     vbmeta \
     vbmeta_system 
 
+# Fastboot
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.1-impl-mock \
+    android.hardware.fastboot@1.0-impl-mock.recovery \
+    fastbootd
+
 # Platform 
 PLATFORM_VERSION := 99.87.36
 PLATFORM_SECURITY_PATCH := 2127-12-31
