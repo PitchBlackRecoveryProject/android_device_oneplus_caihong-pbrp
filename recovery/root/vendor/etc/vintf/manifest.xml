@@ -2,7 +2,7 @@
     Input:
         device/qcom/pineapple/manifest_pineapple.xml
 -->
-<manifest version="7.0" type="device" target-level="8">
+<manifest version="4.0" type="device" target-level="8">
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
@@ -23,6 +23,24 @@
         <fqname>IGatekeeper/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.gatekeeper</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IGatekeeper</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IGatekeeper/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.nfc</name>
+        <fqname>INfc/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.secure_element</name>
+        <fqname>ISecureElement/eSE1</fqname>
+    </hal>
+    <hal format="hidl">
         <name>com.dsi.ant</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IAnt/default</fqname>
@@ -41,6 +59,10 @@
         <name>com.qualcomm.qti.uceservice</name>
         <transport>hwbinder</transport>
         <fqname>@2.3::IUceService/com.qualcomm.qti.uceservice</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.nxp.nxpnfc_aidl</name>
+        <fqname>INxpNfc/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.bluetooth_audio</name>
