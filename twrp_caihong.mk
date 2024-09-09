@@ -12,14 +12,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Inherit from munch device
-$(call inherit-product, device/oneplus/op5daal1/device.mk)
+$(call inherit-product, device/oneplus/caihong/device.mk)
 
 # Inherit some common twrp stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := op5daal1
-PRODUCT_NAME := twrp_op5daal1
+PRODUCT_DEVICE := caihong
+PRODUCT_NAME := twrp_caihong
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := OPD2403
 PRODUCT_MANUFACTURER := OnePlus

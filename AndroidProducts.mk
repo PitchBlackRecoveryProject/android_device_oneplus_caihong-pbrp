@@ -1,8 +1,8 @@
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_op5daal1.mk
+    $(LOCAL_DIR)/twrp_caihong.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_op5daal1-user \
-    twrp_op5daal1-userdebug \
-    twrp_op5daal1-eng
+    twrp_caihong-user \
+    twrp_caihong-userdebug \
+    twrp_caihong-eng

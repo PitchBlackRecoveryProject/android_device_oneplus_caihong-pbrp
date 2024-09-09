@@ -1,6 +1,4 @@
 
-DEVICE_PATH := device/oneplus/op5daal1
-
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
