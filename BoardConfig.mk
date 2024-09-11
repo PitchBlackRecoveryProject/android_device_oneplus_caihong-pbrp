@@ -67,3 +67,6 @@ TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko"
 TWRP_EVENT_LOGGING := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
+# PBRP Specific
+PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
